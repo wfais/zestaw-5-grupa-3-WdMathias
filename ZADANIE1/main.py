@@ -6,7 +6,7 @@ from ZADANIE1.algorytmy import algorytmy
 
 
 N = 50
-FPS = 240
+FPS = 60
 TRYBY = ["R", "S", "A", "T"]
 
 def wykonaj_pomiar():
@@ -33,7 +33,7 @@ def wykonaj_pomiar():
                 }
             )
 
-            plot_histogram(tablica, algo_pomiar["nazwa"], FPS)
+            #plot_histogram(tablica, algo_pomiar["nazwa"], FPS)
 
         wszystkie_pomiary.append(algo_pomiar)
 
