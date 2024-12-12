@@ -54,6 +54,10 @@ def shell_sort(array: MonitorowanaTablica):
 
 def merge_sort(array: MonitorowanaTablica, left=None, right=None):
 # twoj kod
+    if left is None:
+        left = 0
+    if right is None:
+        right = len(array) - 1
     if left < right:
         middle = (left + right) // 2
         merge_sort(array, left, middle)
@@ -90,6 +94,10 @@ def merge(array: MonitorowanaTablica, left, middle, right):
 def quick_sort(array: MonitorowanaTablica, left=None, right=None):
     """Performs quick sort on the given array."""
     # twoj kod
+    if left is None:
+        left = 0
+    if right is None:
+        right = len(array) - 1
     if left >= right:
         return
     pivot = partition(array, left, right)
