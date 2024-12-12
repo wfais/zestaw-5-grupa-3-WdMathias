@@ -4,7 +4,13 @@ from itertools import product
 
 def maximize_expression(K, M, lists):
     # twoj kod tutaj
-    pass 
+    maximum = 0
+    for i in product(*lists):
+        s = sum(x**2 for x in i) % M
+        if s > maximum:
+            maximum = s
+    return maximum
+ 
 
 
 
